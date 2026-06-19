@@ -1,0 +1,6 @@
+<!ELEMENT cong_ty (phong_ban+)>
+<!ELEMENT phong_ban (ten_phong, truong_phong, so_luong_nv)>
+<!ATTLIST phong_ban id ID #REQUIRED>
+<!ELEMENT ten_phong (#PCDATA)>
+<!ELEMENT truong_phong (#PCDATA)>
+<!ELEMENT so_luong_nv (#PCDATA)>

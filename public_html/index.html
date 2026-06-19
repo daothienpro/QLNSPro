@@ -65,7 +65,7 @@
                 <li>Phòng IT bảo trì hệ thống lúc 00:00 Chủ Nhật.</li>
             </ul>
             <hr>
-            <p class="text-muted small">Tính năng này sử dụng Offcanvas của Bootstrap 5 theo đúng yêu cầu đề bài.</p>
+            <p class="text-muted small">Tính năng này sử dụng Offcanvas của Bootstrap 5.</p>
         </div>
     </div>
 
@@ -105,7 +105,7 @@
             <h1 class="display-5 fw-bold text-dark">Phân Hệ Chức Năng Nổi Bật</h1>
             <p class="lead text-muted">Triển khai quy trình tự động hóa các nghiệp vụ nhân sự cốt lõi.</p>
         </div>
-
+        
         <div class="row g-4">
             <div class="col-12 col-md-4">
                 <div class="card h-100 shadow-sm border-0">
@@ -128,7 +128,7 @@
                         <p class="card-text text-muted">Phân bổ nguồn lực, theo dõi cơ cấu tổ chức và vị trí chức danh nhanh chóng (Nạp động qua XML DOM & AJAX).</p>
                     </div>
                     <div class="card-footer bg-white border-0 pb-3">
-                        <a href="pages/auth/login.php" class="btn btn-outline-primary w-100">Tra cứu</a>
+                        <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#xmlModal">Tra cứu</button>
                     </div>
                 </div>
             </div>
@@ -147,6 +147,28 @@
             </div>
         </div>
     </main>
+
+    <div class="modal fade" id="xmlModal" tabindex="-1" aria-labelledby="xmlModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title fw-bold" id="xmlModalLabel">🏢 Cơ Cấu Phòng Ban</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="xml-table-container" class="table-responsive">
+                        <div class="text-center text-muted py-3">
+                            <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+                            Đang tải dữ liệu từ XML...
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="bg-dark text-white py-4 mt-auto">
         <div class="container">
@@ -174,7 +196,6 @@
     </footer>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    
     <script src="js/xml_loader.js"></script>
 </body>
 </html>

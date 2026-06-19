@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cong_ty SYSTEM "schema.dtd">
+<cong_ty>
+    <phong_ban id="PB01">
+        <ten_phong>Hành chính Nhân sự</ten_phong>
+        <truong_phong>Nguyễn Văn A</truong_phong>
+        <so_luong_nv>12</so_luong_nv>
+    </phong_ban>
+    <phong_ban id="PB02">
+        <ten_phong>Phòng IT</ten_phong>
+        <truong_phong>Trần Thị B</truong_phong>
+        <so_luong_nv>25</so_luong_nv>
+    </phong_ban>
+    <phong_ban id="PB03">
+        <ten_phong>Phòng Kế toán</ten_phong>
+        <truong_phong>Lê Văn C</truong_phong>
+        <so_luong_nv>8</so_luong_nv>
+    </phong_ban>
+</cong_ty>
